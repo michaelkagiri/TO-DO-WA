@@ -15,17 +15,11 @@ form.addEventListener('submit', (e) => {
     if(taskText!=='') {
         const li = document.createElement('li');
         li.textContent = taskText;
-
-        // add a delete button to each task
-        const deleteButton = document.createElement('button');
-        deleteButton.textContent = 'Delete';
-        deleteButton.addEventListener('click', () => {
-            taskList.removeChild(li);
-        });
-        
-        li.appendChild(deleteButton);
         taskList.appendChild(li);
 
+        // create a delete button
+
+        
         // clear the input field
         taskInput.value = '';
     }
