@@ -19,8 +19,7 @@ form.addEventListener('submit', (e) => {
 
         // create a delete button
 
-        
+
         // clear the input field
-        taskInput.value = '';
     }
 });
